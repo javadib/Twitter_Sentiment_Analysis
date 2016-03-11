@@ -19,7 +19,7 @@ access_secret <- 'twitter_access_secret'
 setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
 
 #get the tweets
-tweets = searchTwitter("#ChennaiExpress", n=500, lang="en")
+tweets = searchTwitter("#BreakingBad", n=500, lang="en")
 tweets_txt = sapply(tweets[1:50],function(x) x$getText())
 
 #function to clean data
